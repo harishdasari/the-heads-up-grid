@@ -31,12 +31,12 @@
       }
     }
   } ;
- 
+
   makehugrid = function () {
 
     // called at startup. Remove grids, clear state.
     initialCleanUp() ;
-    
+
     /* Column Container */
     var hugridDiv = document.createElement("div");
     hugridDiv.id  = "hugrid";
@@ -69,7 +69,7 @@
     /* If Rows */
     if (rowheight !== 0)  {
       /* Row Container */
-      pageheight     = $(document.body).height();
+      pageheight     = $(document).height();
       var hugridRows = document.createElement("div") ;
       hugridRows.id  = "hugridRows";
       /* Create Rows */
@@ -126,7 +126,7 @@
       window.hugrid.toggleState() ;
     });
   };
-  
+
 
 function initialCleanUp() {
     /* Remove Previously Existing Grid Elements */
